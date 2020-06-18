@@ -1,0 +1,775 @@
+* {
+    color: #060A24;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: 'IBM Plex Mono', monospace; 
+}
+/* HEADER*/
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+header .menu {
+    overflow: hidden; 
+    position: relative;
+    top: 1em;       
+}
+header img {
+    float: left;
+    padding: 1em;
+    position: relative;
+}
+/* HEADER*/
+/* TITULO*/
+.titulo {
+    position: relative;
+    width: 100%;
+    top: 6em;    
+}
+h1 {
+    font-family:'IBM Plex Sans', sans-serif; 
+    position: relative;  
+}
+s {
+    text-decoration: line-through;
+  }
+.titulo p {
+    position: relative;
+}
+.titulo a {
+    background-color: #00F3BB;
+    box-sizing: content-box;
+    position: relative;
+} 
+.titulo a:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF; 
+}
+/* TITULO*/
+/* EPISODIOS*/
+
+.episodios div {
+    position: relative;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(174deg);
+    width: 100%;    
+}
+.episodios div h2 {
+    position: relative;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family:'IBM Plex Sans', sans-serif;
+    width: 90%;
+    transform: skewY(6deg);
+}
+.episodios div ul {
+    position: relative;
+    transform: none;
+    transform: skewY(6deg);
+}
+/* EPISODIOS*/
+/* NOSOTROS*/
+.nosotros img {
+    position: relative;
+    z-index: 3;        
+}
+.nosotros h2 {
+    font-family:'IBM Plex Sans', sans-serif; 
+    position: relative;   
+}
+.nosotros p {
+    position: relative;        
+}
+/* NOSOTROS*/
+/* ENTREVISTAS*/
+
+.entrevistas {
+    position: relative;
+}
+.entrevistas h2 {
+    position: relative;
+    font-family:'IBM Plex Sans', sans-serif;
+}
+.entrevistas div {
+    position: relative;
+}
+/* ENTREVISTAS*/
+/* TOPICOS*/
+
+.topicos h2 {
+    position: relative;
+    font-family:'IBM Plex Sans', sans-serif;
+}
+.topicos ul {
+    position: relative;
+} 
+.topicos ul li {
+    position: relative;        
+}
+.topicos div {
+    position: relative;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
+}
+.topicos .dos {
+    position: relative;
+    font-family:'IBM Plex Sans', sans-serif;
+    color: #FFFFFF;
+    z-index: 3;
+}
+.topicos a {
+    background-color: #00F3BB;
+    box-sizing: content-box;
+    position: relative;
+    z-index: 3;
+}
+footer {
+    z-index: 3;
+    position: relative;
+}
+footer p {
+    position: relative;
+}
+footer ul {
+    position: relative;
+    display: inline;
+}
+footer ul li {
+    display: inline;    
+}
+/* TOPICOS*/
+/* FOOTER*/
+@media only screen and (max-width: 600px) {
+
+    /* HEADER*/   
+    
+    header ul li a {
+        display: block;
+        padding: 1em; 
+        color: white;       
+    }
+    .menu {
+        clear: both;
+        max-height: 0;
+        transition:max-height .2s ease-out;
+        background-color: blue;
+    }
+    header .menu-icon {
+        padding: 1.5em 1em;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+    .menu-icon .nav-icon {
+        background: #000000;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    .menu-icon .nav-icon::before {
+        background: #000000;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        transition: all .2s ease-out; 
+    }
+    .menu-icon .nav-icon::after {
+        background: #000000;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+        transition: all .2s ease-out;
+    }
+    header .menu-btn {
+        display: none;
+    } 
+    .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+        transform: rotate(-45deg);
+        top: 0;
+
+    }
+    header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    /* HEADER*/
+    /* TITULO*/
+    
+    h1 {
+        font-size: 36px;
+        width: 80%;
+        left: 0.5em;
+    }
+    .titulo p {
+        top: 1em;
+        left: 1em;
+        width: 95%;
+        font-size: 14px;       
+    } 
+    .titulo a {
+        top: 4em;
+        width: 30%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 30%;
+        padding-right: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    } 
+    /* TITULO*/
+    /* EPISODIOS*/
+    
+    .episodios div {
+        top: 13em;
+        height: 1203px;
+    }
+    .episodios div h2 {
+        top: 1em;
+        left: 0.5em;
+    }
+    .episodios div ul {
+        top: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .episodios div ul li iframe {
+        width: 100%;
+        height: 240px;
+    }
+    /* EPISODIOS*/
+    /* NOSOTROS*/
+    .nosotros img {
+        width: 100%;
+        height: auto;
+        top: 8em;
+    }
+    .nosotros h2 {
+        font-size: 36px;
+        top: 4em; 
+        left: 0.5em;
+        width: 60%;
+               
+    }
+    .nosotros p {
+        font-size: 14px;
+        top: 10.5em; 
+        margin-left: 16px;
+        margin-right: 16px;       
+    }
+    /* NOSOTROS*/    
+    /* ENTREVISTAS*/
+    
+    .entrevistas {
+        position: relative;
+    }
+    .entrevistas h2 {
+        font-size: 36px;
+        left: 0.5em;
+        top: 5em;
+        width: 90%;
+    }
+    .entrevistas div {
+        top: 12em;
+        display: flex;
+        flex-direction: column;
+    }
+    .entrevistas div img { 
+        width: 100%;
+    }
+
+    /* ENTREVISTAS*/
+    /* TOPICOS*/
+
+    .topicos h2 {
+        font-size: 36px;
+        top: 6em;
+        left: 0.5em;
+        width: 90%;
+    } 
+    .topicos ul {
+        display: flex;
+        flex-direction: column;
+        top: 16em;
+        align-items: center;        
+    }
+    .topicos ul li {              
+        padding-bottom: 52px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+    }
+    .topicos ul li p {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 400;
+    }
+    .topicos div {
+        width: 100%;
+        height: 341px;
+        top: 8em;
+    }
+    .topicos .dos {
+        top: 10em;        
+        font-size: 36px;
+        text-align: center;           
+    }
+    .topicos a {
+        top: 24em;
+        width: 63%;
+        padding: 13px 13.5% 13px  13.5%;  
+        margin-left: 5%;
+        margin-right: 5%;             
+    }
+    /* TOPICOS*/
+    /*FOOTER */
+
+    footer {
+        top: 6em;
+        height: 10em;
+    }
+    footer p {
+        top: 2.5em;
+        text-align: center;
+    }
+    footer ul {
+        top: 5em; 
+        left: 1em;
+               
+    }
+    footer ul li {
+        padding-left: 9%;
+        height: 28px;
+        width: 14px;
+    }
+    /* FOOTER*/
+
+}
+@media only screen and (min-width: 600px) {
+
+    /* HEADER*/
+
+    header img {
+        height: 36px;
+        width: 36px;
+        padding: 0;
+        top: 22px;
+        left: 5%;
+    } 
+
+    header .menu li a:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+    }
+    header .menu li a:active {
+        color: rgba(6,10,36,.56); 
+        text-decoration: line-through;
+    }   
+    header .menu li {
+        float: left;
+    }
+    header .menu li a {
+        padding: 1em 1em;
+        font-size: 1em;
+    }
+    header .menu {
+        float: right;
+        clear: none;
+        max-height: none;
+        padding: 1em 2em;
+        background-color: white;                
+    } 
+    header .menu-icon{
+        display: none;
+    }
+    header .menu-btn {
+        display: none;
+    }
+    /* HEADER*/ 
+    /* TITULO*/
+    
+    .titulo h1 {
+        font-size: 64px;
+        left: 10%;
+        top: 1em;
+        width: 90%;        
+    }
+    .titulo h1 span {
+        color: #0000EC;
+        width: 100%;
+    }
+    .titulo p {
+        top: 4em;
+        left: 10%;
+        width: 45%;
+        text-align: justify;
+    }
+    .titulo a {
+        font-size: 18px;
+        left: 10%;
+        padding: 1em 3.5em 1em 3.5em;
+        top: 7.5em;
+    }
+    /* EPISODIOS*/
+    .episodios div {
+        top: 20em;
+        height: 900px;
+        }
+    .episodios div h2 {
+        top: 2em;
+        left: 2.5em;
+        font-size: 48px;
+        width: 80%;        
+    }
+    .episodios div ul {
+        display: grid;
+        grid-gap: 72px;
+        grid-template-columns: repeat(2,1fr);  
+        align-items: stretch;
+        margin-left: 72px;
+        margin-right: 72px;
+        top: 8em;      
+    }
+    .episodios div ul li iframe {
+        width: 100%;
+        height: 232px;
+    }
+    /* EPISODIOS*/
+    /* NOSOTROS*/
+    
+    .nosotros img {                
+        top: 16em;
+        left: 5%;        
+        }
+    .nosotros h2 {
+        left: 55%;
+        width: 45%;
+        font-size: 36px;
+        bottom: 5em;                     
+    }
+    .nosotros p {
+        left: 55%;
+        width: 40%;
+        bottom: 13em;
+        font-size: 14px;
+        text-align: justify;              
+    } 
+
+    /* NOSOTROS*/
+    /* ENTREVISTAS*/
+    
+    .entrevistas {
+        top: 10em;
+        width: 100%;
+    }
+    .entrevistas h2 {
+        font-size: 48px;
+        left: 10%;
+        bottom: 2em;
+        width: 60%;        
+    }
+    .entrevistas div {
+        bottom: 4em;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);                      
+    }
+    .entrevistas div img {
+        width: 100%;
+    }
+    /* ENTREVISTAS*/
+    /* TOPICOS*/
+
+    .topicos h2 {
+        font-size: 48px;
+        top: 3em;
+        left: 10%; 
+        width: 60%;       
+    }
+    .topicos ul {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        top: 14em;
+        margin-left: 10%;
+        margin-right: 10%;       
+    }
+    .topicos ul li {
+        text-align: center;
+
+    }     
+    .topicos ul li p {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        padding: 10px;
+        
+    }
+    .topicos div {
+        width: 100%;
+        height: 518px;
+        top: 8em;
+    }
+    .topicos .dos {
+        top: 8em;        
+        font-size: 48px;
+        left: 26%;                  
+    }
+    .topicos a {
+        top: 24em;
+        left: 28%;
+        padding: 16px 59px 16px 59px;  
+        font-size: 18px;           
+    }
+    /* TOPICOS*/
+    /*FOOTER*/
+    
+    footer {
+        top: 8em;
+        height: 6em;
+    }
+    footer P {
+        top: 2em; 
+        left: 1em;
+        width: 60%;
+        float: left;
+    }
+    footer ul {
+        top: 2em; 
+        float: right; 
+        right: 5%;
+        width: 14%;              
+    }
+    footer ul li {
+        padding-left: 2%;
+        padding-right: 2%;
+        height: 28px;
+        width: 18px;
+    }
+    /* FOOTER*/
+}
+@media only screen and (min-width: 896px) {
+
+    /* HEADER*/
+
+    header img {
+        height: 36px;
+        width: 36px;
+        padding: 0;
+        top: 22px;
+        left: 5%;
+    } 
+
+    header .menu li a:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+    }
+    header .menu li a:active {
+        color: rgba(6,10,36,.56); 
+        text-decoration: line-through;
+    }   
+    header .menu li {
+        float: left;
+    }
+    header .menu li a {
+        padding: 1em 1em;
+        font-size: 1em;
+    }
+    header .menu {
+        float: right;
+        clear: none;
+        max-height: none;
+        padding: 1em 2em;
+        background-color: white;                
+    } 
+    header .menu-icon{
+        display: none;
+    }
+    header .menu-btn {
+        display: none;
+    }
+    /* HEADER*/ 
+    /* TITULO*/
+    
+    .titulo h1 {
+        font-size: 64px;
+        left: 10%;
+        top: 1em;
+        width: 90%;        
+    }
+    .titulo h1 span {
+        color: #0000EC;
+        width: 100%;
+    }
+    .titulo p {
+        top: 4em;
+        left: 10%;
+        width: 45%;
+        text-align: justify;
+    }
+    .titulo a {
+        font-size: 18px;
+        left: 10%;
+        padding: 1em 3.5em 1em 3.5em;
+        top: 7.5em;
+    }
+    /* EPISODIOS*/
+    .episodios div {
+        top: 20em;
+        height: 900px;
+        }
+    .episodios div h2 {
+        top: 2em;
+        left: 2.5em;
+        font-size: 48px;
+        width: 80%;        
+    }
+    .episodios div ul {
+        display: grid;
+        grid-gap: 72px;
+        grid-template-columns: repeat(2,1fr);  
+        align-items: stretch;
+        margin-left: 72px;
+        margin-right: 72px;
+        top: 8em;      
+    }
+    .episodios div ul li iframe {
+        width: 100%;
+        height: 232px;
+    }
+    /* EPISODIOS*/
+    /* NOSOTROS*/
+    
+    .nosotros img {                
+        top: 16em;
+        left: 10%;
+        }
+    .nosotros h2 {
+        left: 50%;
+        width: 45%;
+        font-size: 48px;
+        bottom: 5em;                     
+    }
+    .nosotros p {
+        left: 50%;
+        width: 30%;
+        bottom: 15em;
+        text-align: justify;              
+    } 
+
+    /* NOSOTROS*/
+    /* ENTREVISTAS*/
+    
+    .entrevistas {
+        top: 10em;
+        width: 100%;
+    }
+    .entrevistas h2 {
+        font-size: 48px;
+        left: 10%;
+        bottom: 2em;
+        width: 60%;        
+    }
+    .entrevistas div {
+        bottom: 4em;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);                      
+    }
+    .entrevistas div img {
+        width: 100%;
+    }
+    /* ENTREVISTAS*/
+    /* TOPICOS*/
+
+    .topicos h2 {
+        font-size: 48px;
+        top: 3em;
+        left: 10%; 
+        width: 60%;       
+    }
+    .topicos ul {
+        display: flex;
+        flex-direction: row;        
+        align-items: center;
+        top: 14em;
+        margin-left: 10%;
+        margin-right: 10%;       
+    }
+    .topicos ul li {
+        text-align: center;
+
+    }     
+    .topicos ul li p {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 400;
+        padding: 20px;
+        
+    }
+    .topicos div {
+        width: 100%;
+        height: 518px;
+        top: 8em;
+    }
+    .topicos .dos {
+        top: 8em;        
+        font-size: 48px;
+        left: 26%;                  
+    }
+    .topicos a {
+        top: 24em;
+        left: 38%;
+        padding: 16px 59px 16px 59px;  
+        font-size: 18px;           
+    }
+    /* TOPICOS*/
+    /*FOOTER*/
+    
+    footer {
+        top: 8em;
+        height: 6em;
+    }
+    footer P {
+        top: 2em; 
+        left: 1em;
+        width: 60%;
+        float: left;
+    }
+    footer ul {
+        top: 2em; 
+        float: right; 
+        right: 8%;
+        width: 20%;              
+    }
+    footer ul li {
+        padding-left: 3%;
+        padding-right: 3%;
+        height: 28px;
+        width: 18px;
+    }
+    /* FOOTER*/
+}
